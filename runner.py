@@ -5,8 +5,12 @@ import argparse
 runner_parser = argparse.ArgumentParser(
     description='This parser parses command line arguments for the runner.py script')
 
-runner_parser.add_argument('--num_samples', type=int, default=30)
-runner_parser.add_argument('--sample_size', type=int, default=20)
+runner_parser.add_argument('--num_samples', type=int, default=30, required=False)
+runner_parser.add_argument('--sample_size', type=int, default=20, required=False)
+runner_parser.add_argument('--range_filter_lower_limit', type=int, default=2, required=False)
+runner_parser.add_argument('--range_filter_upper_limit', type=int, default=25, required=False)
+runner_parser.add_argument('--temporal_neighbour_size', type=int, default=3, required=False)
+
 
 if __name__ == '__main__':
 
@@ -21,7 +25,7 @@ if __name__ == '__main__':
     for i in range(len(samples_generated)):
         print samples_generated[i]
 
-    range_filter = RangeFilter([2, 25])
+    range_filter = RangeFilter([parsed_arguments.range_filter_lower_limit, parsed_arguments.range_filter_upper_limit])
 
     filtered_samples_by_range = range_filter.filter(samples_generated)
 
@@ -30,7 +34,7 @@ if __name__ == '__main__':
     for i in range(len(filtered_samples_by_range)):
         print filtered_samples_by_range[i]
 
-    temporal_median_filter = TemporalMedianFilter(4)
+    temporal_median_filter = TemporalMedianFilter(parsed_arguments.temporal_neighbour_size)
 
     print 'Temporal filtered samples : '
 

@@ -13,7 +13,16 @@ then
     echo "Please enter the size of each sample you wish for the robot to generate"
     read SAMPLE_SIZE
 
-    python runner.py --num_samples ${NUM_SAMPLES} --sample_size ${SAMPLE_SIZE} # 2 command line arguments denoting no. of samples and sample size
+    echo "Please enter the lower limit of the filter"
+    read RANGE_FILTER_LOWER_LIMIT
+
+    echo "Please enter the upper limit of the filter"
+    read RANGE_FILTER_UPPER_LIMIT
+
+    echo "Please enter the temporal neighbour size"
+    read TEMPORAL_NEIGHBOUR_SIZE
+
+    python runner.py --num_samples ${NUM_SAMPLES} --sample_size ${SAMPLE_SIZE} --range_filter_lower_limit ${RANGE_FILTER_LOWER_LIMIT} --range_filter_upper_limit ${RANGE_FILTER_UPPER_LIMIT} --temporal_neighbour_size ${TEMPORAL_NEIGHBOUR_SIZE}
 else
     echo "The runner.py script can only be run with Python 2.7"
 fi
