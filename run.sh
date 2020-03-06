@@ -6,12 +6,12 @@ PYTHON_REQUIRED_VERSION="2.7"
 if [[ ${PYTHON_VERSION} == *"$PYTHON_REQUIRED_VERSION"* ]]
 then
 
-    python test.py #Run tests
+    python test.py # Run tests
 
     echo "Welcome to the filter scan project"
 
     echo "Please enter the no. of samples you wish for the robot to generate"
-    read NUM_SAMPLES
+    read NUM_SAMPLES # No. of samples or N
 
     echo "Please enter the size of each sample you wish for the robot to generate"
     read SAMPLE_SIZE
@@ -23,7 +23,7 @@ then
     read RANGE_FILTER_UPPER_LIMIT
 
     echo "Please enter the temporal neighbour size"
-    read TEMPORAL_NEIGHBOUR_SIZE
+    read TEMPORAL_NEIGHBOUR_SIZE # No. of items in the neighbourhood to determine median from
 
     python runner.py --num_samples ${NUM_SAMPLES} --sample_size ${SAMPLE_SIZE} --range_filter_lower_limit ${RANGE_FILTER_LOWER_LIMIT} --range_filter_upper_limit ${RANGE_FILTER_UPPER_LIMIT} --temporal_neighbour_size ${TEMPORAL_NEIGHBOUR_SIZE}
 else
