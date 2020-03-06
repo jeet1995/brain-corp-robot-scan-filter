@@ -8,7 +8,7 @@ Name : Abhijeet Mohanty
 
 ### Development environment
 * **OS :** MacOS Mojave
-* **IDE :** IntelliJ IDEA 2018.1
+* **IDE :** PyCharm 2019.1.2
 * **Language used :** Python 2.7
 * **Libraries used :** `numpy`, `argparse`, `unittest`, `random`
 
