@@ -5,6 +5,9 @@ PYTHON_REQUIRED_VERSION="2.7"
 
 if [[ ${PYTHON_VERSION} == *"$PYTHON_REQUIRED_VERSION"* ]]
 then
+
+    python test.py #Run tests
+
     echo "Welcome to the filter scan project"
 
     echo "Please enter the no. of samples you wish for the robot to generate"
