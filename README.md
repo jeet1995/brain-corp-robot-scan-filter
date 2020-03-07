@@ -32,6 +32,7 @@ Name : Abhijeet Mohanty
     * An instance of the `TemporalMedianFilter` class is created with the `temporal_scan_size`. 
     * The `temporal_scan_size` is basically the no. of previous values to be considered in order to determine the 
     median.
+* The `RangeAndMedianFilterUnitTest` consists of 2 unit tests to check for correctness of the two filters.
 
 ### Algorithm
 * Range based filtering
