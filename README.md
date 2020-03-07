@@ -60,7 +60,7 @@ Name : Abhijeet Mohanty
 
 ### Results
 
-* The following results were obtained with a range of `[4, 9]`, on a randomly generated `4 x 5` from the 
+* The following results were obtained with a range of `[4, 9]`, on a randomly generated `4 x 5` matrix from the 
 instance of a `Robot`. The `D` value or temporal median neighbourhood was chosen as `3`.
 * The results are saved in `filter_results.txt` :
 *
