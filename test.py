@@ -4,6 +4,13 @@ from filter import RangeFilter, TemporalMedianFilter
 
 
 class RangeAndMedianFilterUnitTest(unittest.TestCase):
+
+    """
+    This Class which has a test suite of 2 unit tests :
+        1. Unit test to test the functionality of range filter
+        2. Unit test to test the functionality of temporal median filter
+    """
+
     range_filter_input = [[10, 12, 3], [19, 7, 8]]
     expected_range_filtered_output = [[10, 10, 5], [10, 7, 8]]
     range = [5, 10]

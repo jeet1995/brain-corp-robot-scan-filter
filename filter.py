@@ -8,6 +8,9 @@ class AbstractFilter:
 
 
 class RangeFilter(AbstractFilter):
+    """
+    Class to perform range filtering
+    """
 
     def __init__(self, range_array):
         self.range_array = range_array
@@ -37,6 +40,9 @@ class RangeFilter(AbstractFilter):
 
 
 class TemporalMedianFilter(AbstractFilter):
+    """
+    Class to perform temporal median filtering
+    """
 
     def __init__(self, temporal_scan_size):
         self.temporal_scan_size = temporal_scan_size
