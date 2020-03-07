@@ -13,7 +13,7 @@ Name : Abhijeet Mohanty
 * **Libraries used :** `numpy`, `argparse`, `unittest`, `random`
 
 ### Running the application
-* Navigate to **abhijeet-mohanty/**
+* Navigate to **abhijeet-mohanty** by executing `cd abhijeet-mohanty/`
 * Add permission to execute `run.sh` by executing `chmod u + x run.sh`
 * Run the bash script by executing the command `./run.sh`
 * **NOTE :** Please enter *integral* values when prompted by the program to enter values on the standard input.
